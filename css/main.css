@@ -1,0 +1,28 @@
+body {
+	background: #000;
+}
+
+.container {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.project {
+	margin: auto;
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+}
+
+.project > a {
+}
+
+.project img {
+	opacity: 0.7;
+	transition: all 0.2s;
+}
+
+.project img:hover {
+	opacity: 1;
+	transition: all 0.2s;
+}
