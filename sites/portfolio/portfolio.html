@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="Text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sudoSlider.min.js"></script>	
+</head>
+<body>
+	<div id="header">
+		<div class="wrapp">
+			<h3>John R. Doe / Designer & Developer</h3>
+			<ul class="social">
+				<li class="tw_ico"><a href="#"></a></li>
+				<li class="fb_ico"><a href="#"></a></li>
+				<li class="vm_ico"><a href="#"></a></li>
+				<li class="bh_ico"><a href="#"></a></li>
+				<li class="dr_ico"><a href="#"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="image">
+		<div class="wrapp">
+			<div id="slider">
+				<ul>
+					<li><img alt="image" src="images/road.jpg"/></li>
+					<li><img alt="image" src="images/cat.jpg"/></li>
+					<li><img alt="image" src="images/bench.jpg"/></li>
+				</ul>
+			</div>
+			<div class="controls">
+			<a href="javascript:void(0);" class="prevBtn customLink" rel="prev"></a>
+			<a href="javascript:void(0);" class="nextBtn customLink" rel="next"></a>
+			</div>
+		</div>	
+	</div>
+
+	<div id="header_content">
+		<div class="wrapp">
+			<h3>~ Welcome to my portfolio ~</h3>
+			<h1>“I make beautiful things happen”</h1>
+			
+				<div class="story">
+					<h4><i></i>A little about me...</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.</p>
+				</div>			
+				<div class="story">
+					<h4><i style="background-position: -16px 0"></i>I’m really good at...</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.</p>
+				</div>
+				<div class="story">
+					<h4><i style="background-position: -32px 0"></i>Services I provide...</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.</p>
+				</div>
+			
+		</div>
+	</div>
+
+	<div id="portfolio">
+		<div class="wrapp">
+			<div class="pf_7"><p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.</p>
+			<div class="controls">
+			<a href="#" class="pf_prevBtn"></a>
+			<a href="#" class="pf_nextBtn"></a>
+			</div>
+			</div>
+			<div class="pf_1" style="background-position: 0px 0px"></div>
+			<div class="pf_2" style="background-position: -220px 0px"></div>
+			<div class="pf_3" style="background-position: -440px 0px"></div>
+			<div class="pf_4" style="background-position: -660px 0px"></div>
+			<div class="pf_5" style="background-position: -880px 0px"></div>
+			<div class="pf_6" style="background-position: -1100px 0px"></div>	
+		</div>
+	</div> 
+	
+	<div id="contact">
+		<div class="wrapp">
+			<div id="contact_form">	
+			<form>
+					<input id="name" type="text" maxlength="30" placeholder="Enter your name">
+					<input id="email" type="email" placeholder="Enter your email address">
+					<input id="url" type="url" placeholder="Enter your website url">
+					<textarea id="textarea" maxlength="330"></textarea>
+			</form>  	
+			</div>
+			<div id="about">	
+				<img src="images/author.jpg">
+				<h3>John Doe / Designer & Developer</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
+				</p>	
+				<p>Contact me: 123.456.789</p>	
+				<p>Email me: <span style="color:#000;">johndoe@gmail.com</span></p><br>
+				<p>Follow me: <a href="#">Twitter</a>   /   <a href="#">Facebook</a>   /   <a href="#">Dribbble</a>   /   <a href="#">Flickr</a></p>				
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer">
+		<div class="wrapp">
+			<p>Copyright © 2015 John Doe. All rights reserved.</p>
+			<ul class="social">
+				<li class="tw_ico"><a href="#"></a></li>
+				<li class="fb_ico"><a href="#"></a></li>
+				<li class="vm_ico"><a href="#"></a></li>
+				<li class="bh_ico"><a href="#"></a></li>
+				<li class="dr_ico"><a href="#"></a></li>
+			</ul>
+		</div>
+	</div>
+<script type="text/javascript" >
+
+		$(document).ready(function(){	
+			var sudoSlider = $("#slider").sudoSlider({
+				customLink:'a.customLink',
+				prevNext:false
+			});
+		});	
+	
+</script>
+</body> 
+</html>
