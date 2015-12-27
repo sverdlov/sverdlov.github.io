@@ -1,28 +1,241 @@
-body {
-	background: #000;
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+html, body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
 }
 
-.container {
-	margin-top: 100px;
+p {
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+.navbar {
+	background: #232D33;
+	border: none;
+	border-radius: 0;
+	margin: 0;
+}
+
+.navbar-brand {
+	font-family: 'Pacifico', cursive;
+	font-size: 24px;
+	color: #488fb8 !important;
+	transition: all .2s;
+}
+
+.navbar-brand:hover {
+	color: #51a0cf !important;
+	transition: all .2s;
+}
+
+.navbar-nav {
+	margin-left: 30px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	text-transform: uppercase;
+	position: relative;
+	color: #c7c7c7;
+}
+
+.navbar-default .navbar-nav>li:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 3px;
+	bottom: 0px;
+	position: absolute;
+	background: transparent;
+	transition: all 0.2s;
+}
+
+.navbar-default .navbar-nav>li:hover:after {
+	width: 100%;
+	background: #488fb8;
+	transition: all 0.2s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #ebebeb;
+}
+
+header {
+	height: 100vh;
+	line-height: 4em;
+	padding: 140px 0 120px;
+	background: #323e48 url(../images/h_bg_min.jpg) center center;
+	background-size: cover;
+}
+
+header h2 {
+	font-size: 4em;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 15vh 0 0;
+	font-weight: bold;
+}
+header h1 {
+	margin: 10px 0 80px 0;
+	color: #fff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.3;
+}
+
+@media(max-width: 767px) {
+	header h2 {
+		margin: 0; 
+		font-size: 1.875em;
+		line-height: 1.875em;
+	}
+	header h1 {
+		font-size: 1.125em;
+		margin-bottom: 5em;
+	}
+}
+
+#button-about {
+	border: 2px solid #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 14px 30px;
+	border-radius: 50px;
+	font-weight: bold;
+}
+
+.about {
+	position: relative;
+	background: #455965;
+}
+
+.about-flex {
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-.project {
-	margin: auto;
-	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
-	border-radius: 5px;
+.about h1 {
+	margin-top: 40px;
+	color: #fff;
 }
 
-.project > a {
+.about p {
+	padding-top: 50px;
+	color: #fff;
 }
 
-.project img {
-	opacity: 0.7;
-	transition: all 0.2s;
+.photo {
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
 }
 
-.project img:hover {
-	opacity: 1;
-	transition: all 0.2s;
+.skills {
+	background: url('../images/2.jpg') 50% 100%;
+	background-size: cover;
+	padding: 0 60px 50px 60px;
+}
+
+.skills .section-title {
+	color: #fff;
+	padding-bottom: 50px;
+}
+
+
+.skills li {
+	color: #fff;
+	line-height: 2;
+	font-weight: 300;
+	font-size: 1.2em;
+	list-style-image: url('../images/marker.png');
+}
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+  	background-position: center bottom;
+}
+
+.portfolio h1 {
+	padding: 20px 0;
+	background: #C2C6B3;
+	margin: 0;
+}
+
+.portfolio-item {
+	padding: 0;
+}
+
+.portfolio-item img {
+	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	transition: all 0.5s;
+}
+
+.portfolio-item img:hover {
+	-webkit-filter: none;
+  	filter: none;
+  	transition: all 0.5s;
+}
+
+.contact {
+	padding: 30px 0;
+	background: #F5F5F5;
+}
+
+.contact p {
+	text-align: center;
+}
+
+.contact h1 {
+	padding: 40px 0;
+	background: #F5F5F5;
+	margin: 0;
+}
+
+.phone {
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.contact-input {
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	width: 100%;
+	border-radius: 2px;
+	outline: none;
+	border: 1px solid #C2C6B3;
+	resize: none;
+}
+
+input.contact-input {
+	height: 35px;
+}
+
+.foo {
+	background: #232D33;
+	padding: 10px;
+	padding-top: 20px;
+}
+
+.foo p {
+	color: #fff;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.send {
+	color: #ebebeb;
+	width: 100px;
+	background: #232D33;
+	transition: all .2s;
+}
+
+.send:hover {
+	color: #c7c7c7; 
+	transition: all .2s;
 }
