@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
 			alert("ТУТ");
 		$.ajax({
 			type: "POST",
-			url: "../mail.php",
+			url: "http://sverdlov.github.io/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
