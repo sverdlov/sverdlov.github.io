@@ -49,14 +49,13 @@ jQuery(document).ready(function(){
 		});
 
 		$("#contact-form").submit(function() {
+			alert("ТУТ");
 		$.ajax({
 			type: "POST",
 			url: "../mail.php",
 			data: $(this).serialize()
 		}).done(function() {
-			$(this).find("input").val("");
 			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-			$("#form").trigger("reset");
 		});
 		return false;
 		});
