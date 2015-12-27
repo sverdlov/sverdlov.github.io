@@ -47,6 +47,22 @@ jQuery(document).ready(function(){
 		        scrollTop: $("#contact").offset().top
 		    }, 1000);
 		});
+
+		$("#contact-form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form").trigger("reset");
+		});
+		return false;
+		});
+
+
+
 });
 
 $(window).scroll(function(){
