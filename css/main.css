@@ -10,6 +10,14 @@ p {
 	line-height: 1.5em;
 }
 
+.os-animation{
+  opacity: 0;
+}
+
+.os-animation.animated{
+    opacity: 1;
+}
+
 .navbar {
 	background: #232D33;
 	border: none;
@@ -83,7 +91,7 @@ header h1 {
 	letter-spacing: 0.3;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
 	header h2 {
 		margin: 0; 
 		font-size: 1.875em;
@@ -159,9 +167,12 @@ header h1 {
   	background-position: center bottom;
 }
 
+.portfolio {
+	background: #F5F5F5;
+}
+
 .portfolio h1 {
 	padding: 20px 0;
-	background: #C2C6B3;
 	margin: 0;
 }
 
@@ -192,16 +203,36 @@ header h1 {
 
 .contact h1 {
 	padding: 40px 0;
-	background: #F5F5F5;
 	margin: 0;
 }
 
 .phone {
 	font-weight: 700;
-	font-size: 2em;
+	font-size: 1.3em;
+}
+
+.ico {
+	width: 60px;
+	height: 60px;
+	margin: 20px 5px;
+	display: inline-block;
+	background: url("../images/sprite.png");
+}
+
+.ico:nth-child(2) {
+	background-position: -120px 0px;
+}
+
+.ico:nth-child(3) {
+	background-position: -60px 0px;
+}
+
+.ico:nth-child(4) {
+	background-position: -180px 0px;
 }
 
 .contact-input {
+	font-weight: 400;
 	display: block;
 	margin-bottom: 15px;
 	padding-left: 10px;
@@ -235,7 +266,32 @@ input.contact-input {
 	transition: all .2s;
 }
 
+.send:focus {
+	color: #ebebeb;
+	outline: none;
+}
+
 .send:hover {
 	color: #c7c7c7; 
 	transition: all .2s;
 }
+
+.centering {
+	/*float:none;*/
+  	margin:0 auto;
+}
+
+/*@media (min-width:767px) {
+.centering {
+	float:none;
+  	margin:0 auto;
+}
+}*/
+
+@media (min-width:320px) and (max-width:768px) {
+.centering {
+	float:none;
+  	margin:0 auto;
+}
+}
+

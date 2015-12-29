@@ -119,7 +119,7 @@
 	</div>
 	<div class="row contact" id="contact">
 		<h1 class="section-title os-animation" data-os-animation="fadeInUp">Contact me</h1>
-		<div class="col-md-4 col-md-offset-2 os-animation" data-os-animation="fadeInUp">
+		<div class="col-md-4 col-sm-6 col-md-offset-2 os-animation  text-center" data-os-animation="fadeInUp">
 			<p>
 			If you are interested in something , do not hesitate to write
 			</p>
@@ -128,13 +128,27 @@
 			</p>
 			<p class="email">sverdlov.andrew@gmail.com</p>
 			<p class="phone">+38 063 874 02 44</p>
+			<div class="social ">
+				<a href="https://www.facebook.com/andrew.sverdlov.12" target="_blank" class="ico"></a>
+				<a href="https://vk.com/andrew_sverdlov" target="_blank" class="ico"></a>
+				<a href="skype:a.n.d.r.y.2?add" target="_blank" class="ico"></a>
+				<a href="https://github.com/sverdlov" target="_blank" class="ico"></a>
+			</div>
 		</div>
-		<div class="col-md-4 os-animation" data-os-animation="fadeInUp">
-			<form action="" method="post" id="contact-form">
-				<input type="text" name="e-mail" class="contact-input" placeholder="your e-mail" required>
-				<input type="text" name="name" class="contact-input" placeholder="you name" required>
-				<textarea name="message" class="contact-input" id="" rows="10" placeholder="what are you interested in" required></textarea>
+		<div class="col-md-4 col-sm-6 col-xs-10 centering os-animation" data-os-animation="fadeInUp">
+			<div class="alert alert-success collapse">
+				<strong><span class="glyphicon glyphicon-send"></span><strong> Success! Message sent.</strong>
+			</div>
+    		<div class="alert alert-danger collapse">
+    			<span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs.</strong>
+    		</div>
+			<form id="contact-form">
+				<input type="email" name="_replyto" class="contact-input" placeholder="Your e-mail" required>
+				<input type="text" name="name" class="contact-input" placeholder="Your name" required>
+				<input type="hidden" name="_subject" value="New submission!" />
+				<textarea name="message" class="contact-input" rows="7" placeholder="What are you interested in?" required></textarea>
 				<button type="submit" class="btn send pull-right">Send</button>
+				
 			</form>
 		</div>
 	</div>
