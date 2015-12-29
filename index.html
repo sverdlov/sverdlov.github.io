@@ -130,10 +130,11 @@
 			<p class="phone">+38 063 874 02 44</p>
 		</div>
 		<div class="col-md-4 os-animation" data-os-animation="fadeInUp">
-			<form action="" method="post" id="contact-form">
-				<input type="text" name="e-mail" class="contact-input" placeholder="your e-mail" required>
+			<form action="http://formspree.io/naremo133@gmail.com" method="post" id="contact-form">
+				<input type="email" name="_replyto" class="contact-input" placeholder="your e-mail" required>
 				<input type="text" name="name" class="contact-input" placeholder="you name" required>
-				<textarea name="message" class="contact-input" id="" rows="10" placeholder="what are you interested in" required></textarea>
+				<input type="hidden" name="_subject" value="New submission!" />
+				<textarea name="message" class="contact-input" rows="10" placeholder="what are you interested in" required></textarea>
 				<button type="submit" class="btn send pull-right">Send</button>
 			</form>
 		</div>

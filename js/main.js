@@ -47,21 +47,6 @@ jQuery(document).ready(function(){
 		        scrollTop: $("#contact").offset().top
 		    }, 1000);
 		});
-
-		$("#contact-form").submit(function() {
-			alert("ТУТ");
-		$.ajax({
-			type: "POST",
-			url: "http://sverdlov.github.io/mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-		});
-		return false;
-		});
-
-
-
 });
 
 $(window).scroll(function(){
