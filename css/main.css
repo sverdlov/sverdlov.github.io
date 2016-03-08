@@ -295,3 +295,9 @@ input.contact-input {
 }
 }
 
+@media (max-width: 640px) {
+	.portfolio-item {
+		width: 100%;
+	}
+}
+

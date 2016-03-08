@@ -25,7 +25,7 @@
 		 onScrollInit( $('.os-animation') );
 		 onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
 
-jQuery(document).ready(function(){
+$(document).ready(function(){
 
 		$("#link-about").click(function() {
 		    $('html, body').animate({
