@@ -15,5 +15,19 @@
     </script>
     <script type="text/javascript" src='https://development.nanotech42.com/static/static_v2/client_site/js/nt42_kb.js'></script>
 
+    <script>
+        window["nanotech42ID"] = "77b961fe-1df9-11e7-93ae-92361f002671";
+        (function() {
+            var t = document['cre'+'ateEle'+'ment']('script');
+            t.type ='text/javascript';
+            t.async = true;
+            t.src = 'https://dev.nanotech42.com/widget/static/js/nt42-widget-app.js';
+            var c = document['getE'+'lement'+'sByTagN'+'ame']('script')[0];
+            if ( c ) c['par'+'e'+'ntNod'+'e']['inse'+'rt'+'Bef'+'or'+'e'](t, c);
+            else document['documen'+'tEl'+'ement']['f'+'irs'+'tChil'+'d']['app'+'endC'+'hi'+'l'+'d'](t);
+        })();
+    </script>
+
+
 </body>
 </html>
